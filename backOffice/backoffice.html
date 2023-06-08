@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<h1 class="text-center m-3">
+  <img src="../logo-no-background.png" alt="">
+</h1>
+
+<body>
+
+  <section class="container">
+    <table class="table table-striped">
+      <thead class="bg-dark text-light">
+        <tr>
+          <th class="col-2">Name</th>
+          <th class="col-5">Description</th>
+          <th class="col-2">Brand</th>
+          <th class="col-1">image URL</th>
+          <th class="col-1">Price</th>
+          <th class="col-1">ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody id="product-table">
+
+      </tbody>
+    </table>
+  </section>
+
+  <section class="container">
+    <h3 class="text-center mb-4">ADD A NEW PRODUCT:</h3>
+    <!--  -->
+    <div class="d-flex d-grid col-6 mx-auto text-center m-2">
+      <div class="col-6 me-1">
+        <input class="form-control form-control-sm" type="text" placeholder="Product Name" id="name-field"
+          aria-label=".form-control-sm example">
+      </div>
+      <div class="col-6">
+        <input class="form-control form-control-sm" type="text" placeholder="Brand Name" id="brand-field"
+          aria-label=".form-control-sm example">
+      </div>
+    </div>
+
+    <div class="d-grid col-6 mx-auto text-center m-2">
+      <input class="form-control form-control-sm" type="text" placeholder="description" id="descr-field"
+        aria-label=".form-control-sm example">
+    </div>
+
+    <div class="d-flex d-grid col-6 mx-auto text-center m-2">
+      <div class="col-9 me-1">
+        <input class="form-control form-control-sm" type="text" placeholder="ImageUrl" id="image-url-field"
+          aria-label=".form-control-sm example">
+      </div>
+      <div class="col-3">
+        <input class="form-control form-control-sm" type="text" placeholder="Price" id="price-field"
+          aria-label=".form-control-sm example">
+      </div>
+    </div>
+
+
+
+
+    <div class="d-grid col-4 mx-auto text-center m-1">
+      <button class="btn btn-danger" id="create-btn">
+        <i class="fa-solid fa-plus me-1"></i>
+        <span>Add Product</span>
+      </button>
+
+      <div class="alert alert-warning d-none my-4" role="alert" id="empty-fields">
+        <i class="fa-solid fa-triangle-exclamation me-1"></i>
+        <span>Valorizza tutti i campi richiesti!</span>
+      </div>
+    </div>
+  </section>
+
+<!-- Modale per la modifica degli elementi tramite il listener su editBtn -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Edit Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="nameInputModal" class="form-label">Product Name</label>
+          <input type="text" class="form-control" id="nameInputModal">
+        </div>
+        <div class="mb-3">
+          <label for="descrInputModal" class="form-label">Description</label>
+          <input type="text" class="form-control" id="descrInputModal">
+        </div>
+        <div class="mb-3">
+          <label for="brandInputModal" class="form-label">Brand</label>
+          <input type="text" class="form-control" id="brandInputModal">
+        </div>
+        <div class="mb-3">
+          <label for="imageUrlInputModal" class="form-label">Image URL</label>
+          <input type="text" class="form-control" id="imageUrlInputModal">
+        </div>
+        <div class="mb-3">
+          <label for="priceInputModal" class="form-label">Price</label>
+         
+
+  <script src="https://kit.fontawesome.com/c2a1535ff8.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="scriptBackOffice.js"></script>
+
+
+</body>
+
+</html>

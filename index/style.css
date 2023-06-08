@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 2em;
+}
+
+
+.nav-icons {
+    height: 3em;
+}

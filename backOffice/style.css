@@ -1,0 +1,28 @@
+
+.fixed-width-cell {
+    width: 100px; /* Imposta la larghezza fissa iniziale */
+    min-width: 100px; /* Imposta la larghezza minima */
+    max-width: 200px; /* Imposta la larghezza massima */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 576px) {
+    /* Media query per dispositivi mobili */
+    .fixed-width-cell {
+      width: 50px; /* Riduci la larghezza per dispositivi mobili */
+      min-width: 50px;
+      max-width: 100px;
+    }
+  }
+  
+
+  .preview-image {
+    position: absolute;
+    max-width: 200px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+  }
