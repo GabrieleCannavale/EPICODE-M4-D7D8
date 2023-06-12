@@ -31,14 +31,14 @@ function createProductCardTemplate(product) {
         "card",
         "p-0",
         "d-flex",
-        "col-12",
+        "col-10",
         "col-sm-6",
         "col-md-4",
         "col-xl-2",
         "justify-content-between",
         "overflow-hidden",
-        "ms-4",
-        "my-2"
+        "m-2",
+        "my-3"
     )
 
     const productImg = document.createElement('img');
